@@ -87,7 +87,7 @@ export const AuthProvider = ({ children }) => {
 
             if (currentUser?.email) {
                 const userData = { email: currentUser.email };
-                axios.post('http://localhost:3000/jwt', userData)
+                axios.post('https://future-aid-server.vercel.app/jwt', userData)
                     .then(response => {
                         // console.log('User data sent successfully:', response.data);
                         localStorage.setItem('access-token', response.data.token);

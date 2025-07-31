@@ -75,8 +75,8 @@ VITE_FIREBASE_APP_ID=your_app_id
 1. **Clone the repo:**
 
 ```bash
-git clone https://github.com/yourusername/futureaid-client.git
-cd futureaid-client
+git clone https://github.com/jahid-jhb/future-aid-client.git
+cd future-aid-client
 ```
 
 2. **Install dependencies:**
@@ -98,7 +98,7 @@ npm run dev
 
 ## 🔗 Backend
 
-You can find the backend API source [here](https://github.com/yourusername/futureaid-server).
+You can find the backend API source [here](https://github.com/jahid-jhb/future-aid-server).
 
 ---
 

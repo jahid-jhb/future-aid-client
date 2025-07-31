@@ -27,10 +27,10 @@ const ScholarshipCard = ({ scholarship }) => {
             </div>
             <div className="text-sm mb-1">Deadline: <span className="font-medium">{deadline}</span></div>
             <div className="text-sm mb-1">Fees: <span className="font-medium">${fees}</span></div>
-            <div className="flex items-center mb-2">
+            {/* <div className="flex items-center mb-2">
                 <span className="text-yellow-500 mr-1">★</span>
                 <span className="font-semibold">{rating}</span>
-            </div>
+            </div> */}
             <Link
                 to={`/scholarships/${_id}`}
                 className="mt-auto bg-blue-600 text-white px-4 py-1.5 rounded hover:bg-blue-700 transition text-sm"
