@@ -2,35 +2,35 @@ const FeaturedUniversities = () => {
     const universities = [
         {
             name: "Harvard University",
-            logo: "https://i.ibb.co/RjhPK7X/harvard.png"
+            logo: "/harvard.png"
         },
         {
             name: "Stanford University",
-            logo: "https://i.ibb.co/f9vTYx6/stanford.png"
+            logo: "/stanford.png"
         },
         {
             name: "MIT",
-            logo: "https://i.ibb.co/RT0X0pS/mit.png"
+            logo: "/mit.png"
         },
         {
             name: "Oxford University",
-            logo: "https://i.ibb.co/R6ZZL6P/oxford.png"
+            logo: "/oxford.png"
         },
         {
             name: "Cambridge University",
-            logo: "https://i.ibb.co/Z2KPnD9/cambridge.png"
+            logo: "/cambridge.png"
         },
         {
             name: "Yale University",
-            logo: "https://i.ibb.co/VvFVyJ0/yale.png"
+            logo: "/yale.png"
         },
         {
             name: "Princeton University",
-            logo: "https://i.ibb.co/CtXSTRk/princeton.png"
+            logo: "/Princeton.png"
         },
         {
             name: "Columbia University",
-            logo: "https://i.ibb.co/RQ7nxDJ/columbia.png"
+            logo: "/columbia.png"
         }
     ];
 
