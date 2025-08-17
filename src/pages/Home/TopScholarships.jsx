@@ -45,7 +45,7 @@ const TopScholarships = () => {
 
 
     return (
-        <section className="max-w-6xl mx-auto mt-10 px-4">
+        <section className="max-w-6xl mx-auto mt-20">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Top Scholarships</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {topSix.map(sch => (
@@ -54,7 +54,7 @@ const TopScholarships = () => {
                         <h3 className="text-lg font-semibold mb-1">{sch.universityName}</h3>
                         <div className="text-sm text-gray-500 mb-1">{sch.universityCity}, {sch.universityCountry}</div>
                         <div className="mb-1">
-                            <span className="inline-block bg-accent text-accent px-2 py-0.5 rounded text-xs mr-2">{sch.scholarshipCategory}</span>
+                            <span className="inline-block bg-base-100 px-2 py-0.5 rounded text-xs mr-2">{sch.scholarshipCategory}</span>
                             {/* <span className="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">{sch.subject}</span> */}
                         </div>
                         <div className="text-sm mb-1">Deadline: <span className="font-medium">{sch.applicationDeadline}</span></div>
