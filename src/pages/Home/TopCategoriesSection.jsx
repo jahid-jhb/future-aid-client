@@ -17,7 +17,7 @@ const TopCategoriesSection = () => {
                 <p className="mb-10 text-gray-600">Explore scholarships based on your field of interest.</p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                     {categories.map((cat, idx) => (
-                        <div key={idx} className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+                        <div key={idx} className="bg-base-300 rounded-lg shadow p-6 hover:shadow-lg transition">
                             <div className="text-4xl mb-2">{cat.icon}</div>
                             <h4 className="font-semibold">{cat.name}</h4>
                         </div>
