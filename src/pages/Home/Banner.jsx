@@ -40,7 +40,7 @@ const Banner = () => {
                                 alt={slide.title}
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
-                            <div className="relative z-10 bg-black bg-opacity-50 p-8 rounded text-center text-white max-w-xl mx-auto">
+                            <div className="relative z-10 bg-black/20 backdrop-blur-xs p-8 rounded text-center text-white max-w-xl mx-auto">
                                 <h2 className="text-2xl md:text-4xl font-bold mb-2">{slide.title}</h2>
                                 <p className="text-base md:text-lg">{slide.desc}</p>
                             </div>
