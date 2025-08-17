@@ -1,4 +1,5 @@
 import React from 'react';
+import ModeratorChart from './ModeratorChart';
 
 const Moderator = () => {
     return (
@@ -7,13 +8,7 @@ const Moderator = () => {
             <p className="mb-4 text-gray-700">
                 Welcome to the Moderator Dashboard. Here you can manage scholarships, applications, and reviews.
             </p>
-            <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>View and edit your profile</li>
-                <li>Manage all scholarships</li>
-                <li>Review and manage all applications</li>
-                <li>View and respond to user inquiries</li>
-                <li>Generate reports on scholarship performance</li>
-            </ul>
+            <ModeratorChart />
         </div>
     );
 };

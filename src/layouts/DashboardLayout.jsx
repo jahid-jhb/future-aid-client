@@ -12,7 +12,7 @@ const DashboardLayout = () => {
     return (
         <>
             <Navbar />
-            <div className="min-h-screen flex bg-gray-100">
+            <div className="min-h-screen flex">
                 {/* Sidebar for desktop & mobile */}
                 {/* Overlay for mobile */}
                 {sidebarOpen && (
@@ -22,7 +22,7 @@ const DashboardLayout = () => {
                     />
                 )}
                 <aside
-                    className={`fixed md:static z-10 top-0 left-0 h-full w-64 bg-white/40 shadow-lg p-6 transform transition-transform duration-200
+                    className={`fixed md:static z-10 top-0 left-0 min-h-full w-64 shadow-lg p-6 bg-base-200 transform transition-transform duration-200
                     ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:block`}
                 >
                     {/* Close button for mobile */}
@@ -43,10 +43,12 @@ const DashboardLayout = () => {
                         />
                         <div className="font-bold text-lg">{user?.displayName || user?.email}</div>
                         <div className="text-xs text-gray-500">
-                            {isAdmin ? 'Admin' : isModerator ? 'Moderator' : 'User'}
+                            {isAdmin ? 'Admin' : isModerator ? 'Moderator' : ''}
                         </div>
                     </div>
                     <nav className="flex flex-col gap-3">
+
+                        <Link to={isAdmin ? "/dashboard/admin" : isModerator ? "/dashboard/moderator" : "/dashboard/user"} className="hover:text-accent">Over View</Link>
                         {/* User Dashboard Links */}
                         {!isAdmin && !isModerator && (
                             <>
