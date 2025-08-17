@@ -25,7 +25,7 @@ const ReviewSlider = ({ scholarshipId }) => {
     if (loading) {
         return (
             <div className="flex justify-center items-center py-12">
-                <span className="loading loading-spinner loading-lg text-blue-600"></span>
+                <span className="loading loading-spinner loading-lg text-accent-600"></span>
             </div>
         );
     }
@@ -36,7 +36,7 @@ const ReviewSlider = ({ scholarshipId }) => {
 
     return (
         <div className="w-full max-w-3xl mx-auto my-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-blue-700">What Our Students Say</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-accent-700">What Our Students Say</h2>
             <Swiper
                 modules={[Pagination, Autoplay]}
                 pagination={{ clickable: true }}
@@ -58,7 +58,7 @@ const ReviewSlider = ({ scholarshipId }) => {
                                         />
                                     </div>
                                 </div>
-                                <h4 className="font-bold text-lg text-blue-700">{review.reviewerName}</h4>
+                                <h4 className="font-bold text-lg text-accent-700">{review.reviewerName}</h4>
                                 <div className="text-gray-400 text-sm mb-2">
                                     {review.reviewDate
                                         ? new Date(review.reviewDate).toLocaleDateString()

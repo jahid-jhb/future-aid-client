@@ -3,7 +3,7 @@ import React from 'react';
 const User = () => {
     return (
         <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded shadow">
-            <h2 className="text-2xl font-bold mb-4 text-blue-700">User Dashboard</h2>
+            <h2 className="text-2xl font-bold mb-4 text-accent-700">User Dashboard</h2>
             <p className="mb-4 text-gray-700">
                 Welcome to your dashboard! Here you can view your profile, manage your scholarship applications, and see your reviews.
             </p>

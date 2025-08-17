@@ -95,7 +95,7 @@ const Register = () => {
                             onChange={handlePhotoUpload}
                             disabled={uploading}
                         />
-                        {uploading && <div className="text-blue-500 text-sm mt-1">Uploading...</div>}
+                        {uploading && <div className="text-accent-500 text-sm mt-1">Uploading...</div>}
                         {photoURL && (
                             <img src={photoURL} alt="Profile" className="h-16 w-16 rounded-full mt-2 object-cover" />
                         )}
@@ -122,7 +122,7 @@ const Register = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+                        className="w-full bg-accent-600 text-white py-2 rounded hover:bg-accent-700 transition"
                         disabled={loading || uploading}
                     >
                         {loading ? 'Registering...' : 'Register'}
@@ -130,7 +130,7 @@ const Register = () => {
                 </form>
                 <p className="mt-4 text-center">
                     Already have an account?{' '}
-                    <Link to="/login" className="text-blue-600 hover:underline">
+                    <Link to="/login" className="text-accent-600 hover:underline">
                         Login
                     </Link>
                 </p>
