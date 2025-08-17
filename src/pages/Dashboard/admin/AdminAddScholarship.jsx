@@ -113,7 +113,7 @@ const AdminAddScholarship = () => {
 
                 <textarea {...register('description')} className="textarea textarea-bordered md:col-span-2 w-full" placeholder="Description"></textarea>
 
-                <button type="submit" className="btn btn-primary md:col-span-2">
+                <button type="submit" className="btn bg-accent md:col-span-2">
                     {uploading ? 'Uploading...' : 'Add Scholarship'}
                 </button>
             </form>

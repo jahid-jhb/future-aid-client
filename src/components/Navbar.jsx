@@ -41,7 +41,7 @@ const Navbar = () => {
                     </svg>
                 </button>
                 {/* Nav Links */}
-                <div className={`flex-col md:flex-row md:flex items-center gap-6 absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none transition-all duration-200 z-40 ${menuOpen ? 'flex' : 'hidden md:flex'}`}>
+                <div className={`flex-col md:flex-row md:flex items-center gap-6 absolute md:static top-full left-0 w-full md:w-auto md:bg-transparent shadow md:shadow-none transition-all duration-200 z-40 ${menuOpen ? 'flex' : 'hidden md:flex'}`}>
                     <NavLink to="/" className={({ isActive }) => isActive ? 'text-accent font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
                         Home
                     </NavLink>

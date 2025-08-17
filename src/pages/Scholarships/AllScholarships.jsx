@@ -58,7 +58,7 @@ const AllScholarships = () => {
                                 <h3 className="text-lg font-semibold mb-1">{sch.universityName}</h3>
                                 <div className="text-sm text-gray-500 mb-1">{sch.universityCity}, {sch.universityCountry}</div>
                                 <div className="mb-1">
-                                    <span className="inline-block bg-accent text-accent px-2 py-0.5 rounded text-xs mr-2">{sch.scholarshipCategory}</span>
+                                    <span className="inline-block bg-base-100 px-2 py-0.5 rounded text-xs mr-2">{sch.scholarshipCategory}</span>
                                 </div>
                                 <div className="text-sm mb-1">Deadline: <span className="font-medium">{sch.applicationDeadline}</span></div>
                                 <div className="text-sm mb-1">Fees: <span className="font-medium">${sch.tuitionFees}</span></div>
@@ -81,7 +81,7 @@ const AllScholarships = () => {
                                 <button
                                     key={i}
                                     onClick={() => setCurrentPage(i + 1)}
-                                    className={`btn btn-sm ${currentPage === i + 1 ? 'btn-primary' : 'btn-outline'}`}
+                                    className={`btn btn-sm ${currentPage === i + 1 ? 'bg-accent text-white' : 'btn-outline'}`}
                                 >
                                     {i + 1}
                                 </button>

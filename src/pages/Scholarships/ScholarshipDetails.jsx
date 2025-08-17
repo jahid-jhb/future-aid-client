@@ -66,7 +66,7 @@ const ScholarshipDetails = () => {
                 </div>
 
                 <div className="mt-6 text-right">
-                    <button onClick={handleApply} className="btn btn-primary">
+                    <button onClick={handleApply} className="btn bg-accent">
                         Apply for this Scholarship
                     </button>
                 </div>

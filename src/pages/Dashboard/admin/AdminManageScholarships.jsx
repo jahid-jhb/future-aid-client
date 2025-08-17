@@ -62,7 +62,7 @@ const AdminManageScholarships = () => {
         try {
             const res = await api.patch(`/scholarships/${editData._id}?email=${user.email}`, editData);
             // console.log(res.data);
-            
+
             if (res.data.modifiedCount || res.data.matchedCount) {
                 Swal.fire({
                     title: 'Updated!',
@@ -155,7 +155,7 @@ const AdminManageScholarships = () => {
                             <div className="modal-action col-span-2">
                                 <form method="dialog">
                                     <button className="btn mr-2">Close</button>
-                                    <button type="button" onClick={handleUpdate} className="btn btn-primary">Update</button>
+                                    <button type="button" onClick={handleUpdate} className="btn bg-accent">Update</button>
                                 </form>
                             </div>
                         </div>

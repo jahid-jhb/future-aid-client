@@ -110,7 +110,7 @@ const ApplyScholarship = () => {
                         />
                     </div>
 
-                    <button type="submit" className="btn btn-primary w-full mt-4">
+                    <button type="submit" className="btn bg-accent w-full mt-4">
                         Proceed to Payment
                     </button>
                 </form>

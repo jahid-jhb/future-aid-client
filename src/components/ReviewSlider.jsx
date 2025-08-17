@@ -51,7 +51,7 @@ const ReviewSlider = ({ scholarshipId }) => {
                         <div className="card bg-base-100 shadow-xl border border-blue-100 mx-2">
                             <div className="card-body items-center text-center">
                                 <div className="avatar mb-3">
-                                    <div className="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    <div className="w-20 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
                                         <img
                                             src={review.reviewerImage || '/default-avatar.png'}
                                             alt={review.reviewerName}

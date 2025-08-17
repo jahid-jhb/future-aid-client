@@ -27,7 +27,7 @@ const UserProfile = () => {
             <div className="card bg-base-200 shadow-lg p-6">
                 <div className="flex flex-col items-center space-y-4">
                     <div className="avatar">
-                        <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                        <div className="w-24 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
                             <img src={user?.photoURL || "https://i.ibb.co/ZmFHZrj/avatar-placeholder.png"} alt="Avatar" />
                         </div>
                     </div>

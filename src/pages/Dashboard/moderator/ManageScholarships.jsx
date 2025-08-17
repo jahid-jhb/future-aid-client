@@ -155,7 +155,7 @@ const ManageScholarships = () => {
                             <div className="modal-action col-span-2">
                                 <form method="dialog">
                                     <button className="btn mr-2">Close</button>
-                                    <button type="button" onClick={handleUpdate} className="btn btn-primary">Update</button>
+                                    <button type="button" onClick={handleUpdate} className="btn bg-accent">Update</button>
                                 </form>
                             </div>
                         </div>

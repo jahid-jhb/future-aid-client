@@ -71,8 +71,8 @@ const Register = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
-            <div className="w-full max-w-md bg-white p-8 rounded shadow">
+        <div className="min-h-screen flex items-center justify-center to-base-200">
+            <div className="w-full max-w-md bg-base-100 p-8 rounded shadow">
                 <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
                 {error && <div className="mb-4 text-red-500">{error}</div>}
                 <form onSubmit={handleSubmit} className="space-y-4">

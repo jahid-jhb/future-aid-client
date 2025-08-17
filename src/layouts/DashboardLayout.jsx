@@ -22,7 +22,7 @@ const DashboardLayout = () => {
                     />
                 )}
                 <aside
-                    className={`fixed md:static z-10 top-0 left-0 h-full w-64 bg-white shadow-lg p-6 transform transition-transform duration-200
+                    className={`fixed md:static z-10 top-0 left-0 h-full w-64 bg-white/40 shadow-lg p-6 transform transition-transform duration-200
                     ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:block`}
                 >
                     {/* Close button for mobile */}

@@ -93,19 +93,19 @@ const PaymentPage = () => {
             <h2 className="text-2xl font-bold mb-4">Pay Application Fee</h2>
             <div className="card shadow-lg bg-base-200 p-6">
                 <p className="mb-4 font-semibold">
-                    Scholarship: <span className="text-primary">{scholarship?.scholarshipName}</span><br />
+                    Scholarship: <span className="text-accent">{scholarship?.scholarshipName}</span><br />
                     Amount: <span className="text-green-600">${applicationFees}</span>
                 </p>
 
                 <form onSubmit={handleSubmit}>
-                    <div className="bg-white p-4 rounded border mb-4">
+                    <div className="bg-base-300 p-4 rounded border mb-4">
                         <CardElement options={{ hidePostalCode: true }} />
                     </div>
 
                     {error && <p className="text-red-500 mb-2">{error}</p>}
 
                     <button
-                        className="btn btn-primary w-full"
+                        className="btn bg-accent w-full"
                         type="submit"
                         disabled={!stripe || !clientSecret || processing}
                     >

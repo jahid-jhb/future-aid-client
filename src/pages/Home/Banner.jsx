@@ -24,7 +24,7 @@ const slides = [
 
 const Banner = () => {
     return (
-        <div className="w-full max-w-6xl mx-auto mt-6 rounded-lg overflow-hidden shadow-lg">
+        <div className="w-full max-w-6xl mx-auto mt-10 rounded-lg overflow-hidden shadow-lg">
             <Swiper
                 modules={[Autoplay, Pagination]}
                 autoplay={{ delay: 3500, disableOnInteraction: false }}

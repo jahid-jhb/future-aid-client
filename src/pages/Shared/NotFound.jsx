@@ -10,7 +10,7 @@ const NotFound = () => {
       <p className="text-base-content mb-6 max-w-md">
         Sorry, the page you are looking for doesn't exist or has been moved.
       </p>
-      <Link to="/" className="btn btn-primary gap-2">
+      <Link to="/" className="btn bg-accent gap-2">
         <FaArrowLeft /> Go Home
       </Link>
     </div>

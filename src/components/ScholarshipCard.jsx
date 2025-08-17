@@ -17,12 +17,12 @@ const ScholarshipCard = ({ scholarship }) => {
     } = scholarship;
 
     return (
-        <div className="bg-white rounded-lg shadow p-5 flex flex-col items-center">
+        <div className="rounded-lg shadow p-5 flex flex-col items-center">
             <img src={logo} alt={university} className="h-16 w-16 object-contain mb-3" />
             <h3 className="text-lg font-semibold mb-1">{university}</h3>
             <div className="text-sm text-gray-500 mb-1">{location}</div>
             <div className="mb-1">
-                <span className="inline-block bg-accent text-accent px-2 py-0.5 rounded text-xs mr-2">{category}</span>
+                <span className="inline-block bg-accent px-2 py-0.5 rounded text-xs mr-2">{category}</span>
                 <span className="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">{subject}</span>
             </div>
             <div className="text-sm mb-1">Deadline: <span className="font-medium">{deadline}</span></div>

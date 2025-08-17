@@ -134,7 +134,7 @@ const UserApplications = () => {
                                         <button className="btn btn-sm btn-info" onClick={() => navigate(`/scholarships/${app.scholarshipId}`)}><FaInfoCircle /></button>
                                         <button className="btn btn-sm btn-warning" onClick={() => handleEdit(app)}><FaEdit /></button>
                                         <button className="btn btn-sm btn-error" onClick={() => handleCancel(app._id)}><FaTrashAlt /></button>
-                                        <button className="btn btn-sm btn-primary" onClick={() => setReviewModal(app)}><FaStar /></button>
+                                        <button className="btn btn-sm bg-accent" onClick={() => setReviewModal(app)}><FaStar /></button>
                                     </td>
                                 </tr>
                             ))}

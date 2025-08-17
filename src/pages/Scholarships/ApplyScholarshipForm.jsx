@@ -115,7 +115,7 @@ const ApplyScholarshipForm = () => {
                     <input value={scholarship.subjectCategory} readOnly className="input input-bordered bg-gray-100" />
 
                 </div>
-                <button type="submit" className="btn btn-primary mt-2">Apply Now</button>
+                <button type="submit" className="btn bg-accent mt-2">Apply Now</button>
             </form>
         </section>
     );
