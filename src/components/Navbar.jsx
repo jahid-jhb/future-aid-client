@@ -42,26 +42,26 @@ const Navbar = () => {
                 </button>
                 {/* Nav Links */}
                 <div className={`flex-col md:flex-row md:flex items-center gap-6 absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none transition-all duration-200 z-40 ${menuOpen ? 'flex' : 'hidden md:flex'}`}>
-                    <NavLink to="/" className={({ isActive }) => isActive ? 'text-accent-600 font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
+                    <NavLink to="/" className={({ isActive }) => isActive ? 'text-accent font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
                         Home
                     </NavLink>
-                    <NavLink to="/scholarships" className={({ isActive }) => isActive ? 'text-accent-600 font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
+                    <NavLink to="/scholarships" className={({ isActive }) => isActive ? 'text-accent font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
                         All Scholarship
                     </NavLink>
                     {user && (
                         <>
                             {(!isAdmin && !isModerator) && (
-                                <NavLink to="/dashboard/user" className={({ isActive }) => isActive ? 'text-accent-600 font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
+                                <NavLink to="/dashboard/user" className={({ isActive }) => isActive ? 'text-accent font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
                                     Dashboard
                                 </NavLink>
                             )}
                             {isAdmin && (
-                                <NavLink to="/dashboard/admin" className={({ isActive }) => isActive ? 'text-accent-600 font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
+                                <NavLink to="/dashboard/admin" className={({ isActive }) => isActive ? 'text-accent font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
                                     Admin Dashboard
                                 </NavLink>
                             )}
                             {isModerator && (
-                                <NavLink to="/dashboard/moderator" className={({ isActive }) => isActive ? 'text-accent-600 font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
+                                <NavLink to="/dashboard/moderator" className={({ isActive }) => isActive ? 'text-accent font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
                                     Moderator Dashboard
                                 </NavLink>
                             )}
@@ -79,7 +79,7 @@ const Navbar = () => {
                                 <span className=" font-medium mb-2 md:mb-0">{user.displayName || user.email}</span>
                                 <button
                                     onClick={handleLogout}
-                                    className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition mb-2 md:mb-0"
+                                    className="bg-accent text-white px-3 py-1 rounded hover:bg-red-600 transition mb-2 md:mb-0"
                                 >
                                     Logout
                                 </button>
@@ -87,7 +87,7 @@ const Navbar = () => {
                         ) : (
                             <NavLink
                                 to="/login"
-                                className={({ isActive }) => isActive ? 'bg-accent-600 text-white px-4 py-1.5 rounded' : 'bg-accent-100 text-accent-700 px-4 py-1.5 rounded'}
+                                className={({ isActive }) => isActive ? 'bg-accent text-white px-4 py-1.5 rounded' : 'bg-accent px-4 py-1.5 rounded'}
                             >
                                 Login
                             </NavLink>

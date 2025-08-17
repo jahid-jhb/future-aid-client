@@ -9,9 +9,9 @@ const Footer = () => (
                 <span className="font-bold text-lg">FutureAid</span>
             </div>
             <div className="flex gap-6">
-                <Link to="/" className="hover:text-accent-400 transition">Home</Link>
-                <Link to="/scholarships" className="hover:text-accent-400 transition">All Scholarships</Link>
-                <Link to="/dashboard/user" className="hover:text-accent-400 transition">Dashboard</Link>
+                <Link to="/" className="hover:text-accent transition">Home</Link>
+                <Link to="/scholarships" className="hover:text-accent transition">All Scholarships</Link>
+                <Link to="/dashboard/user" className="hover:text-accent transition">Dashboard</Link>
             </div>
             <div className="text-sm text-gray-400">
                 &copy; {new Date().getFullYear()} FutureAid. All rights reserved.

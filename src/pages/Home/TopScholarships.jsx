@@ -37,7 +37,7 @@ const TopScholarships = () => {
     if (loading) {
         return (
             <div className="flex justify-center items-center py-12">
-                <span className="loading loading-spinner loading-lg text-accent-600"></span>
+                <span className="loading loading-spinner loading-lg text-accent"></span>
             </div>
         );
     }
@@ -54,7 +54,7 @@ const TopScholarships = () => {
                         <h3 className="text-lg font-semibold mb-1">{sch.universityName}</h3>
                         <div className="text-sm text-gray-500 mb-1">{sch.universityCity}, {sch.universityCountry}</div>
                         <div className="mb-1">
-                            <span className="inline-block bg-accent-100 text-accent-700 px-2 py-0.5 rounded text-xs mr-2">{sch.scholarshipCategory}</span>
+                            <span className="inline-block bg-accent text-accent px-2 py-0.5 rounded text-xs mr-2">{sch.scholarshipCategory}</span>
                             {/* <span className="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">{sch.subject}</span> */}
                         </div>
                         <div className="text-sm mb-1">Deadline: <span className="font-medium">{sch.applicationDeadline}</span></div>
@@ -65,7 +65,7 @@ const TopScholarships = () => {
                         </div>
                         <Link
                             to={`/scholarships/${sch._id}`}
-                            className="mt-auto bg-accent-600 text-white px-4 py-1.5 rounded hover:bg-accent-700 transition text-sm"
+                            className="mt-auto bg-accent text-white px-4 py-1.5 rounded hover:bg-accent transition text-sm"
                         >
                             Scholarship Details
                         </Link>

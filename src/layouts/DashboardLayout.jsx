@@ -50,37 +50,37 @@ const DashboardLayout = () => {
                         {/* User Dashboard Links */}
                         {!isAdmin && !isModerator && (
                             <>
-                                <Link to="/dashboard/user/profile" className="hover:text-accent-600" onClick={handleSidebarToggle}>My Profile</Link>
-                                <Link to="/dashboard/user/applications" className="hover:text-accent-600" onClick={handleSidebarToggle}>My Applications</Link>
-                                <Link to="/dashboard/user/reviews" className="hover:text-accent-600" onClick={handleSidebarToggle}>My Reviews</Link>
+                                <Link to="/dashboard/user/profile" className="hover:text-accent" onClick={handleSidebarToggle}>My Profile</Link>
+                                <Link to="/dashboard/user/applications" className="hover:text-accent" onClick={handleSidebarToggle}>My Applications</Link>
+                                <Link to="/dashboard/user/reviews" className="hover:text-accent" onClick={handleSidebarToggle}>My Reviews</Link>
                             </>
                         )}
                         {/* Moderator Dashboard Links */}
                         {isModerator && !isAdmin && (
                             <>
-                                <Link to="/dashboard/moderator/profile" className="hover:text-accent-600" onClick={handleSidebarToggle}>My Profile</Link>
-                                <Link to="/dashboard/moderator/manage-scholarships" className="hover:text-accent-600" onClick={handleSidebarToggle}>Manage Scholarships</Link>
-                                <Link to="/dashboard/moderator/all-reviews" className="hover:text-accent-600" onClick={handleSidebarToggle}>All Reviews</Link>
-                                <Link to="/dashboard/moderator/all-applications" className="hover:text-accent-600" onClick={handleSidebarToggle}>All Applied Application</Link>
-                                <Link to="/dashboard/moderator/add-scholarship" className="hover:text-accent-600" onClick={handleSidebarToggle}>Add Scholarship</Link>
+                                <Link to="/dashboard/moderator/profile" className="hover:text-accent" onClick={handleSidebarToggle}>My Profile</Link>
+                                <Link to="/dashboard/moderator/manage-scholarships" className="hover:text-accent" onClick={handleSidebarToggle}>Manage Scholarships</Link>
+                                <Link to="/dashboard/moderator/all-reviews" className="hover:text-accent" onClick={handleSidebarToggle}>All Reviews</Link>
+                                <Link to="/dashboard/moderator/all-applications" className="hover:text-accent" onClick={handleSidebarToggle}>All Applied Application</Link>
+                                <Link to="/dashboard/moderator/add-scholarship" className="hover:text-accent" onClick={handleSidebarToggle}>Add Scholarship</Link>
                             </>
                         )}
                         {/* Admin Dashboard Links */}
                         {isAdmin && (
                             <>
-                                <Link to="/dashboard/admin/profile" className="hover:text-accent-600" onClick={handleSidebarToggle}>Admin Profile</Link>
-                                <Link to="/dashboard/admin/add-scholarship" className="hover:text-accent-600" onClick={handleSidebarToggle}>Add Scholarship</Link>
-                                <Link to="/dashboard/admin/manage-scholarships" className="hover:text-accent-600" onClick={handleSidebarToggle}>Manage Scholarships</Link>
-                                <Link to="/dashboard/admin/manage-applications" className="hover:text-accent-600" onClick={handleSidebarToggle}>Manage Applications</Link>
-                                <Link to="/dashboard/admin/manage-users" className="hover:text-accent-600" onClick={handleSidebarToggle}>Manage Users</Link>
-                                <Link to="/dashboard/admin/manage-reviews" className="hover:text-accent-600" onClick={handleSidebarToggle}>Manage Reviews</Link>
+                                <Link to="/dashboard/admin/profile" className="hover:text-accent" onClick={handleSidebarToggle}>Admin Profile</Link>
+                                <Link to="/dashboard/admin/add-scholarship" className="hover:text-accent" onClick={handleSidebarToggle}>Add Scholarship</Link>
+                                <Link to="/dashboard/admin/manage-scholarships" className="hover:text-accent" onClick={handleSidebarToggle}>Manage Scholarships</Link>
+                                <Link to="/dashboard/admin/manage-applications" className="hover:text-accent" onClick={handleSidebarToggle}>Manage Applications</Link>
+                                <Link to="/dashboard/admin/manage-users" className="hover:text-accent" onClick={handleSidebarToggle}>Manage Users</Link>
+                                <Link to="/dashboard/admin/manage-reviews" className="hover:text-accent" onClick={handleSidebarToggle}>Manage Reviews</Link>
                             </>
                         )}
                     </nav>
                 </aside>
                 {/* Sidebar toggle button for mobile */}
                 <button
-                    className="fixed md:hidden top-20 left-4 z-50 bg-accent-600 text-white p-2 rounded-full shadow-lg"
+                    className="fixed md:hidden top-20 left-4 z-50 bg-accent text-white p-2 rounded-full shadow-lg"
                     onClick={handleSidebarToggle}
                     aria-label="Open Sidebar"
                 >
