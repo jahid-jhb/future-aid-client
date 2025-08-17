@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router';
 import { useAuth } from '../context/AuthContext';
+import { useDarkMode } from '../context/ThemeContext';
+import ToggleButton from './ToggleButton';
 
 const Navbar = () => {
     const { user, logout, isAdmin, isModerator } = useAuth();
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const { darkMode, setDarkMode } = useDarkMode();
 
     const handleLogout = async () => {
         try {
@@ -41,7 +45,7 @@ const Navbar = () => {
                     </svg>
                 </button>
                 {/* Nav Links */}
-                <div className={`flex-col md:flex-row md:flex items-center gap-6 absolute md:static top-full left-0 w-full md:w-auto md:bg-transparent shadow md:shadow-none transition-all duration-200 z-40 ${menuOpen ? 'flex' : 'hidden md:flex'}`}>
+                <div className={`flex-col md:flex-row md:flex items-center gap-6 absolute md:static top-full left-0 w-full md:w-auto md:bg-transparent shadow md:shadow-none transition-all duration-200 z-40 ${menuOpen ? 'flex bg-base-300' : 'hidden md:flex'}`}>
                     <NavLink to="/" className={({ isActive }) => isActive ? 'text-accent font-semibold py-2 md:py-0 block' : ' py-2 md:py-0 block'}>
                         Home
                     </NavLink>
@@ -67,8 +71,12 @@ const Navbar = () => {
                             )}
                         </>
                     )}
+
+                    <div className='flex items-center'>
+                        <ToggleButton data={{ darkMode, setDarkMode }} />
+                    </div>
                     {/* Auth Buttons */}
-                    <div className="flex flex-col md:flex-row items-center gap-4 md:ml-4 w-full md:w-auto">
+                    <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
                         {user ? (
                             <>
                                 <img
